@@ -4,7 +4,7 @@
 
 Objetivos a serem alcançados no decorrer da construção do projeto:
 
-- implementar uma página com a antiga versão da tela de login do facebook. Este foi o primeiro trabalho realizado em duplas, permitindo que tenhamos o primeiro contato com um fluxo de desenvolvimento no mercado de trabalho. Para realizar o projeto foram utilizados javascript, css e html, buscando também referências de bibliotecas e frameworks e design responsivo.
+- implementar uma página com a antiga versão da tela de login do facebook. Este foi o primeiro trabalho realizado em duplas, permitindo que tenhamos contato com um fluxo de desenvolvimento no mercado de trabalho. Para realizar o projeto foram utilizados javascript, css e html, buscando também referências de frameworks e design responsivo.
 
 Como foi construído:
 
