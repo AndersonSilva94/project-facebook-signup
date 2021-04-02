@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .validateError {
@@ -8,15 +9,75 @@
   background-color: brown;
   color: white;
 }
-
 .top-bar {
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-header{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(66, 103, 178);
+}
+
+.facebook-header img {
+  width: 170px;
+  height: auto;
+  cursor: pointer;
 }
 
 .facebook-login {
   display: flex;
+  align-items: baseline;
+  margin: 13px 0 3px 0;
+}
+
+.facebook-login label {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.facebook-login input {
+  width: 90%;
+  border: 0.5px solid black;
+}
+
+.facebook-login button {
+  padding: 2px 6px;
+  cursor: pointer;
+  background-color: #4267b2;
+  border: 0.5px solid #29487d;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+}
+
+.facebook-login a {
+  text-decoration: none;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #9cb4d8;
+  font-weight: normal;
+}
+
+.facebook-login a:hover {
+  text-decoration: underline;
+}
+
+.facebook-login button:hover {
+  background-color: #29487d;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.centralize-button {
+  align-self: center;
 }
 
 .form-group {
@@ -24,11 +85,8 @@
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .main-content {
+  height: 100vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(white, #D3D8E8);
@@ -41,13 +99,20 @@
   background-clip: initial;
   background-color: initial;
 }
+.centralize {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
 
 .left-content {
-  width: 800px;
+  width: 600px;
 }
 
 .right-content {
-  width: 300px;
+  width: 500px;
 }
 
 .nameLastname {
