@@ -32,7 +32,6 @@ function validateInputs () {
   return resultTrue;
 }
 
-
 function validateRadios () {
   let resultTrue = true;
   let resultFalse = false;

@@ -11,6 +11,7 @@
 }
 .top-bar {
   background-color: rgb(66, 103, 178);
+  padding-bottom: 3px;
 }
 
 .facebook-header{
@@ -56,9 +57,12 @@
   border-radius: 3px;
 }
 
+.facebook-login p {
+  line-height: 1;
+}
+
 .facebook-login a {
   text-decoration: none;
-  margin-top: 4px;
   font-size: 10px;
   color: #9cb4d8;
   font-weight: normal;
@@ -99,6 +103,7 @@
   background-clip: initial;
   background-color: initial;
 }
+
 .centralize {
   width: 75%;
   margin-left: auto;
@@ -108,7 +113,17 @@
 }
 
 .left-content {
-  width: 600px;
+  width: 700px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 .right-content {
