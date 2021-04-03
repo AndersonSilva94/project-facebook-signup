@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .validateError {
@@ -10,8 +10,9 @@
   color: white;
 }
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  padding-bottom: 3px;
+  background-color: #43609c;
+  /* padding-bottom: 3px; */
+  height: 82px;
 }
 
 .facebook-header{
@@ -23,6 +24,7 @@
 }
 
 .facebook-header img {
+  margin-top: 17px;
   width: 170px;
   height: auto;
   cursor: pointer;
@@ -32,21 +34,23 @@
   display: flex;
   align-items: baseline;
   margin: 13px 0 3px 0;
+  width: 40%;
 }
 
 .facebook-login label {
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 5px;
 }
 
 .facebook-login input {
   width: 90%;
   border: 0.5px solid black;
+  padding: 3px;
 }
 
 .facebook-login button {
-  padding: 2px 6px;
+  padding: 5px;
   cursor: pointer;
   background-color: #4267b2;
   border: 0.5px solid #29487d;
@@ -63,7 +67,7 @@
 
 .facebook-login a {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 13px;
   color: #9cb4d8;
   font-weight: normal;
 }
@@ -119,7 +123,7 @@
 #facebook-slogan {
   color: #0e385f;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
@@ -140,7 +144,8 @@
   padding: 10px 8px;
   border: 0.5px solid grey;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  font-size: 18px;
 }
 
 .quick-easy {
@@ -153,7 +158,21 @@
 }
 
 .nameLastname input {
-  width: 44%;
+  width: 44.5%;
+}
+
+#label-birthdate, #label-gender {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#label-birthdate {
+  margin-bottom: 4px;
+}
+
+#label-gender {
+  margin-bottom: 10px;
 }
 
 .createAccount {
@@ -161,7 +180,46 @@
   flex-direction: column;
 }
 
+.radios {
+  display: flex;
+}
+
 #radio-gender {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+
+}
+
+#radio-gender input {
+  margin-right: 5px;
+}
+
+#radio-gender p {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
+.text-politic {
+  margin: 15px 0;
+  color: #777;
+  font-size: 11px;
+  width: 316px;
+}
+
+.text-politic a {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text-politic a:hover {
+  text-decoration: underline;
+}
+
+#customizer-container {
+  width: 100%;
 }

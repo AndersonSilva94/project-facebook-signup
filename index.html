@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook Signup</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="icon"
     href="https://web.archive.org/web/20200101163229im_/https://www.facebook.com/images/fb_icon_325x325.png">
   <link rel="stylesheet" href="style.css">
@@ -43,8 +45,8 @@
           <form class="createAccount" method="GET">
             <div class="validateError">Campos inválidos</div>
             <div class="nameLastname">
-              <input type="text" name="firstname" placeholder="Nome">
-              <input type="text" name="lastname" placeholder="Sobrenome">
+              <input type="text" name="firstname" placeholder="Nome" required>
+              <input type="text" name="lastname" placeholder="Sobrenome" required>
             </div>
             <input type="text" name="phone_email" placeholder="Celular ou email">
             <input type="password" name="password" placeholder="Nova senha">
@@ -55,12 +57,19 @@
             <div class="form-group">
               <label id="label-gender">Gênero</label>
               <div id="radio-gender">
-                <input type="radio" name="gender" id="feminino" value="Feminino">Feminino
-                <input type="radio" name="gender" id="masculino" value="Masculino">Masculino
-                <input type="radio" name="gender" id="personalizado" value="Personalizado">Personalizado
+                <div class="radios">
+                  <input type="radio" name="gender" id="feminino" value="Feminino"><p>Feminino</p>
+                </div>
+                <div class="radios">
+                  <input type="radio" name="gender" id="masculino" value="Masculino"><p>Masculino</p>
+                </div>
+                <div class="radios">
+                  <input type="radio" name="gender" id="personalizado" value="Personalizado"><p>Personalizado</p>
+                </div>
               </div>
             </div>
             <div id="customized-container"></div>
+            <p class="text-politic">Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Política de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
             <button type="submit" id="facebook-register">Cadastre-se</button>
           </form>
         </div>
