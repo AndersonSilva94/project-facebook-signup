@@ -127,12 +127,33 @@
 }
 
 .right-content {
+  padding-top: 20px;
   width: 500px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.right-content input {
+  padding: 10px 8px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.quick-easy {
+  padding-bottom: 20px;
 }
 
 .nameLastname {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nameLastname input {
+  width: 44%;
 }
 
 .createAccount {
