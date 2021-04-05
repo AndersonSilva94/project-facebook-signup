@@ -111,7 +111,7 @@
   background-color: initial;
 }
 
-.centralize {
+.centralize, hr {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -121,6 +121,10 @@
 
 .left-content {
   width: 700px;
+}
+
+.left-content img {
+  margin-bottom: 50px;
 }
 
 #facebook-slogan {
@@ -218,7 +222,7 @@
   text-decoration: none;
 }
 
-.text-politic a:hover, .text-create a:hover {
+.text-politic a:hover, .text-create a:hover, footer a:hover {
   text-decoration: underline;
 }
 
@@ -257,4 +261,31 @@
   margin-top: 10px;
   margin-bottom: 50px;
   padding-top: 15px;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+footer p {
+  color: #737373;
+  font-size: 12px;
+  line-height: 2;
+  margin: 10px 0;
+}
+
+footer a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #385898;
+  cursor: pointer;
+  text-align: start;
+}
+
+#new-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }

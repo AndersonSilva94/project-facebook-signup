@@ -10,8 +10,11 @@ const buttonLogin = document.getElementById('button-login');
 
 function alertLoginButton() {
   const emailPhone = document.getElementById('user-email-phone').value;
+  const passwordEnter = document.getElementById('user-password').value;
   if (emailPhone === '') {
     alert('Digite um email válido!');
+  } else if(passwordEnter === '') {
+    alert('Digite uma senha!')
   }
 }
 
@@ -55,17 +58,14 @@ function createDiv () {
   const rightContent = document.querySelector('.right-content');
   const firstname = document.querySelector('input[name="firstname"]').value;
   const lastname = document.querySelector('input[name="lastname"]').value;
-  const phoneEmail = document.querySelector('input[name="phone_email"]').value;
   const birthday = document.querySelector('input[name="birthdate"]').value;
-  const gender = [...document.querySelectorAll('#radio-gender input')];
   rightContent.innerHTML = '';
-  rightContent.appendChild(createElements('p', `Olá, ${firstname} ${lastname}`))
-  rightContent.appendChild(createElements('p',
-   `email/ telefone: ${phoneEmail}`));
-  rightContent.appendChild(createElements('p',
-   `Data de nascimento: ${birthday}`));
-   rightContent.appendChild(createElements('p', `Gênero: ${gender.filter((x) => x.checked)[0].value}`))
-
+  rightContent.appendChild(createElements('div', ''));
+  let newDiv = document.querySelector('.right-content div');
+  newDiv.id = 'new-div';
+  newDiv.appendChild(createElements('h1', `Olá, ${firstname} ${lastname} <br> Estamos muito felizes em ter você conosco!`))
+  // newDiv.appendChild(createElements('p',
+  //  `Data de nascimento: ${birthday}`));
 }
 
 function validateForm () {
