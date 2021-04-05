@@ -230,7 +230,7 @@
   width: 95%;
 }
 
-#facebook-register {
+#facebook-register, #new-div button {
   margin: 10px 0;
   font-size: 19px;
   font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
@@ -249,7 +249,7 @@
   text-align: center;
 }
 
-#facebook-register:hover {
+#facebook-register:hover, #new-div button:hover {
   background: linear-gradient(#79bc64, #578843);
 }
 
@@ -285,7 +285,20 @@ footer a {
 #new-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
+}
+
+#new-div img {
+  width: 30%;
+  align-self: center;
+}
+
+#new-div h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#new-div button {
+  margin-top: 30px;
 }

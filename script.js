@@ -54,18 +54,35 @@ function createElements (elements, text) {
   return createElement;
 }
 
+function realoadPage(element) {
+  element.addEventListener('click', () => {
+    location.reload();
+  })
+}
+
 function createDiv () {
   const rightContent = document.querySelector('.right-content');
   const firstname = document.querySelector('input[name="firstname"]').value;
   const lastname = document.querySelector('input[name="lastname"]').value;
   const birthday = document.querySelector('input[name="birthdate"]').value;
+  const email = document.querySelector('input[name="phone_email"]').value;
   rightContent.innerHTML = '';
   rightContent.appendChild(createElements('div', ''));
-  let newDiv = document.querySelector('.right-content div');
+  const newDiv = document.querySelector('.right-content div');
   newDiv.id = 'new-div';
-  newDiv.appendChild(createElements('h1', `Olá, ${firstname} ${lastname} <br> Estamos muito felizes em ter você conosco!`))
-  // newDiv.appendChild(createElements('p',
-  //  `Data de nascimento: ${birthday}`));
+  newDiv.appendChild(createElements('h2', `Olá, ${firstname} ${lastname} <br> Estamos muito felizes em ter você conosco!`))
+  newDiv.appendChild(createElements('img', ''));
+  const imgDiv = document.querySelector('#new-div img');
+  imgDiv.src = 'imgs/smile.svg';
+  newDiv.appendChild(createElements('h3',
+  `Alguns dados informados: `));
+  newDiv.appendChild(createElements('p',
+   `<strong>Data de nascimento:</strong> ${birthday}`));
+  newDiv.appendChild(createElements('p',
+   `<strong>E-mail ou telefone:</strong> ${email}`));
+  newDiv.appendChild(createElements('button', 'Voltar'));
+   const buttonReload = document.querySelector('#new-div button')
+   realoadPage(buttonReload);
 }
 
 function validateForm () {
